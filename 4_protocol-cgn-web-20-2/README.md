@@ -8,12 +8,12 @@
 | 4     | Civan Erbay      |
 | 5     | Alpay Ergindemir |
 | 6     | Franziska Georg  |
-| 7     | Tom Tänzer       |
-| 8     | Carolin Janshen  |
-| 9     | Wladislaw Moser  |
-| 10    | Jan Riefling     |
-| 11    | Christopher Siem |
-| 12    | Christian Smit   |
+| 7     | Carolin Janshen  |
+| 8     | Wladislaw Moser  |
+| 9     | Jan Riefling     |
+| 10    | Christopher Siem |
+| 11    | Christian Smit   |
+| 12    | Tom Tänzer       |
 | 13    | Sabine Verkennis |
 | 14    | Mona Vorschulze  |
 
@@ -38,8 +38,14 @@
   - Web Einführung
   - Java Intro
 
-- [13.05.2020, Mittwoch](/2020-05-12-wednesday.md)
+- [13.05.2020, Mittwoch](/2020-05-13-wednesday.md)
   - Variabeln
   - Datentypen
   - Operatoren
   - Methoden
+
+- [14.05.2020, Donnerstag](/2020-05-14-thursday.md)
+  - Maven & J-Unit
+  - Wie schreibe ich einen Test? - Anleitung
+  - If / Else if / Else Statement
+  - Switch Statement
