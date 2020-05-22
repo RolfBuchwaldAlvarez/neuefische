@@ -49,3 +49,9 @@
   - Wie schreibe ich einen Test? - Anleitung
   - If / Else if / Else Statement
   - Switch Statement
+  
+- [20.05.2020, Mittwoch](/2020-05-20-wednesday.md)
+  - Polymorphie und Vererbung
+  - Collections in Java - ArrayList
+  - Exceptions und Optional
+ 
