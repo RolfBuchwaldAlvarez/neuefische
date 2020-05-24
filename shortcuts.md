@@ -4,23 +4,23 @@
 
 ### Java
 - Auflisten von verfügbaren Methoden (z.B. bei Klassen): `ctrl`+`Leertaste`
+- Breakpoint setzen: `cmd`+`fn`+`F8`
 - Code formatieren: `cmd`+`opt`+`l`
+- Doku aufrufen: `cmd`+`b`
 - Duplizieren: `cmd`+`d`
 - File durchsuchen: `cmd`+`f`
+- Identische Bezeichner alle gleichzeitig ändern: `cmd`+`r`
+- Klasse/Methode umbenennen; Variable ändern: `cmd`+`f6`
+- Kommentar einfügen: `cmd`+`shift`+`7`
 - Mehrere Zeilen editieren: `opt`+`Maus runterziehen`
 - Methode auslagern:  `cmd`+`opt`+`m`
-- Klasse/Methode umbenennen; Variable ändern: `cmd`+`f6`
-- Identische Bezeichner alle gleichzeitig ändern: `cmd`+`r`
-- Suchen: `cmd`+`shift`+`a`
-- Variable aus Parameter generieren/auslagern: `cmd`+`opt`+`v`
-- Zeilen hin und her schieben: `cmd`+`shift`+`Pfeiltaste hoch/runter`
-- Doku aufrufen: `cmd`+`b`
 - Run java: `ctrl`+`r`
 - Run test: `ctrl`+`shift`+`r`
 - Run debug: `ctrl`+`shift`+`d`
-- einzeiligen Kommentar einfügen: `cmd`+`shift`+`7`
+- Suchen: `cmd`+`shift`+`a`
 - Terminal aufrufen: `opt`+`fn`+`F12`
-- Breakpoint setzen: `cmd`+`fn`+`F8`
+- Variable aus Parameter generieren/auslagern: `cmd`+`opt`+`v`
+- Zeilen hin und her schieben: `cmd`+`shift`+`Pfeiltaste hoch/runter`
 
 ****
 ### Git
