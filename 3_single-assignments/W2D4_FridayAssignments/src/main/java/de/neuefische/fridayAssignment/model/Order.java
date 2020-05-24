@@ -1,45 +1,51 @@
 package de.neuefische.fridayAssignment.model;
 
-import de.neuefische.fridayAssignment.interfaces.ID;
-
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class Order {
-    private int id;
+    private int orderID;
     private ArrayList<Product> order;
-    private static int counter = 0;
+    private static int orderCounter = 0;
 
-    public Order(int id, ArrayList<Product> order) {
-        this.id = id;
+    public Order(int orderID, ArrayList<Product> order) {
+        this.orderID = orderID;
         this.order = order;
-        this.counter++;
+        this.orderCounter++;
     }
 
-    public int getID() {
-        return id;
+    public void listOrder() {
+        System.out.println("Order-No.: " + getOrderID());
+        for (int i = 0; i < getOrder().size(); i++) {
+            System.out.println("Ordered Products: " + getOrder().get(i).getName());
+        }
+        System.out.println();
     }
 
-    public void setID(int id) {
-        this.id = id;
+    public int getOrderID() {
+        return orderID;
     }
 
-    public ArrayList<Product> getProducts() {
+    public void setOrderID(int orderID) {
+        this.orderID = orderID;
+    }
+
+    public ArrayList<Product> getOrder() {
         return order;
     }
 
-    public void setProducts(ArrayList<Product> order) {
+    public void setOrder(ArrayList<Product> order) {
         this.order = order;
     }
 
     public static int getCounter() {
-        return counter;
+        return orderCounter;
     }
 
     @Override
     public String toString() {
         return "Order{" +
-                "id=" + id +
+                "orderID=" + orderID +
                 ", products='" + order + '\'' +
                 '}';
     }
@@ -49,12 +55,12 @@ public class Order {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return id == order.id &&
+        return orderID == order.orderID &&
                 Objects.equals(order, order.order);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, order);
+        return Objects.hash(orderID, order);
     }
 }

@@ -1,30 +1,33 @@
 package de.neuefische.fridayAssignment.utils;
 
 import de.neuefische.fridayAssignment.model.Order;
-import de.neuefische.fridayAssignment.model.Product;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class OrderDB {
-    private ArrayList<Product> orderDB = new ArrayList<>();
+    private static ArrayList<ArrayList<Order>> orderList = new ArrayList<>();
 
-    public OrderDB(ArrayList<Product> orderDB){
-        this.orderDB = orderDB;
+    public static void listOrderList() {
+        System.out.println("Orders saved in list:");
+            for (int i = 0; i < getOrderList().size(); i++) {
+                System.out.println(orderList.get(i));
+        }
+        System.out.println();
     }
 
-    public Order list(){
-
+    public static ArrayList<ArrayList<Order>> getOrderList(){
+        return orderList;
     }
 
-    public Order get(){
-
+    public static void setOrderList(ArrayList<Order> validatedOrder){
+        orderList.add(validatedOrder);
     }
 
     @Override
     public String toString() {
         return "OrderDB{" +
-                "orderDB=" + orderDB +
+                "orderDB=" + orderList +
                 '}';
     }
 
@@ -33,11 +36,11 @@ public class OrderDB {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         OrderDB orderDB1 = (OrderDB) o;
-        return Objects.equals(orderDB, orderDB1.orderDB);
+        return Objects.equals(orderList, orderDB1.orderList);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(orderDB);
+        return Objects.hash(orderList);
     }
 }
