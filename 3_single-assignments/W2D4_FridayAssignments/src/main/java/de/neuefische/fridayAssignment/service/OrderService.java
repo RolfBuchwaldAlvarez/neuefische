@@ -1,7 +1,7 @@
-package de.neuefische.fridayAssignment;
+package de.neuefische.fridayAssignment.service;
 
 import de.neuefische.fridayAssignment.model.Order;
-import de.neuefische.fridayAssignment.utils.ProductDB;
+import de.neuefische.fridayAssignment.db.ProductDB;
 
 import java.util.ArrayList;
 import java.util.Objects;
