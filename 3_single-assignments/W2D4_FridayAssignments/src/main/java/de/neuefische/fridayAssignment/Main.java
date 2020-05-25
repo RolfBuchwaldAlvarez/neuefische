@@ -1,10 +1,10 @@
 package de.neuefische.fridayAssignment;
 
 import de.neuefische.fridayAssignment.model.Product;
-import de.neuefische.fridayAssignment.utils.OrderDB;
-import de.neuefische.fridayAssignment.utils.ProductDB;
+import de.neuefische.fridayAssignment.db.OrderDB;
+import de.neuefische.fridayAssignment.db.ProductDB;
 import de.neuefische.fridayAssignment.model.Order;
-import de.neuefische.fridayAssignment.OrderService;
+import de.neuefische.fridayAssignment.service.OrderService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,6 +49,8 @@ public class Main {
 
            //Print OrderDB-List
            OrderDB.listOrderList();
+       } else {
+           System.out.println("Software Error!");
        }
 
 

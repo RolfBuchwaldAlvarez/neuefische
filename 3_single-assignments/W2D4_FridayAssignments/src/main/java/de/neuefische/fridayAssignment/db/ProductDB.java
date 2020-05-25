@@ -1,4 +1,4 @@
-package de.neuefische.fridayAssignment.utils;
+package de.neuefische.fridayAssignment.db;
 
 import de.neuefische.fridayAssignment.model.Product;
 
