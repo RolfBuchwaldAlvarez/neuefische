@@ -20,15 +20,32 @@ public class StudentController {
     }
 
     @GetMapping
-    public List<Student> getStudent(){
-        return studentList;
+    public List<Student> getStudent(@RequestParam(name="q", required = false) String query,@RequestParam(required = false) Integer minage) {
+        if (query == null) {
+            return studentList;
         }
+        ArrayList<Student> matchingStudents = new ArrayList<>();
+
+        for (Student student : studentList) {
+            if (student.getAge() > minage) {
+                matchingStudents.add(student);
+            }
+        }
+        return matchingStudents;
+    }
 
     @PutMapping
     public Student addStudent(@RequestBody Student student){
         studentList.add(student);
         return student;
     }
+
+ /*   @DeleteMapping
+    public String deleteStudent(@PathVariable String id){
+        return id;
+    }
+
+  */
 
     @GetMapping("{id}")
     public Student getStudentById(@PathVariable String id){
@@ -38,5 +55,12 @@ public class StudentController {
             }
         }
         return null;
+    }
+
+    private boolean studentMatchQuery(Student student, String query, Integer minage){
+        if(student.getAge() < minage) {
+            return false;
+        }
+        
     }
 }
