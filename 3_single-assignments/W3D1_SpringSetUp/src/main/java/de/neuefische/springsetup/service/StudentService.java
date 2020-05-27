@@ -13,9 +13,8 @@ public class StudentService {
         new Student("1", "Trude", 19, "UAM"),
         new Student("2", "Horst", 17, "FOM"),
         new Student("3", "Brigitte", 18, "UOC"),
-        new Student("3", "Brigitte", 18, "UOC"),
-
-        new Student("4", "Hermann", 20,"TUD")
+        new Student("4", "Gert", 21, "UOC"),
+        new Student("5", "Hermann", 20,"TUD")
     ));
 
     public StudentService() {
