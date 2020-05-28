@@ -15,10 +15,10 @@ import java.util.List;
 public class ProductDB {
 
     private final List<Product> productList = new ArrayList<>(List.of(
-            new Product("1", "Pizza Caprese"),
-            new Product("2", "Pizza Cipolla"),
-            new Product("3", "Pizza Tonno"),
-            new Product("4", "Pizza Prosciutto")
+            new Product("1", "Caprese"),
+            new Product("2", "Cipolla"),
+            new Product("3", "Tonno"),
+            new Product("4", "Prosciutto")
     ));
 
     public void add(Product product){

@@ -19,8 +19,20 @@ public class ProductService {
         this.productDB = productDB;
     }
 
-    public List<Product> getProductList() {
-        return productDB.getProductList();
+    public List<Product> getProductList(String query) {
+        if (query == null) {
+            return productDB.getProductList();
+        } else {
+            List<Product> matchingProducts = new ArrayList<>();
+
+            List<Product> productList = productDB.getProductList();
+            for (Product product : productList) {
+                if(product.getName().toLowerCase().startsWith(query.toLowerCase())){
+                    matchingProducts.add(product);
+                }
+            }
+            return matchingProducts;
+        }
     }
 
 }
