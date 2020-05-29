@@ -22,11 +22,11 @@ private final OrderService orderService;
     }
 
     @GetMapping
-    public List<Order> getOrderList (){
+    public List<Order> getOrderList(){
         return orderService.getOrderList();
     }
 
-    @PutMapping
+    @PostMapping
     public Order addOrder(@RequestBody Order order){
         orderService.addOrder(order);
     return order;

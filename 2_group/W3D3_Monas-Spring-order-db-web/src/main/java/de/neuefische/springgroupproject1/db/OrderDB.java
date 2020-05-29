@@ -12,9 +12,9 @@ public class OrderDB {
 
     private final List<Order> orderList = new ArrayList<>(List.of(
 
-            new Order("1",List.of( new Product("3","Affe"))),
-            new Order("2",List.of( new Product("7","Katze")))
-
+            new Order("1",List.of( new Product("1","Caprese"), new Product("3", "Tonno"))),
+            new Order("2",List.of( new Product("2","Cipolla"), new Product("3", "Tonno"))),
+            new Order("3",List.of( new Product("1","Caprese"), new Product("2", "Cipolla"), new Product("4", "Prosciutto")))
     ));
 
     public void addOrders(Order order) {
@@ -23,6 +23,10 @@ public class OrderDB {
 
     public List<Order> getOrderList(){
         return orderList;
+    }
+
+    public void clearDB(){
+        orderList.clear();
     }
 
 }
