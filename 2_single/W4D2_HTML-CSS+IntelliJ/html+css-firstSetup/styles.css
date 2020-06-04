@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    height: 68px;
+    width: 100%;
+    background-color: lightseagreen;
+    position: absolute;
+    top: 0px;
+}
+
+main {
+    position: absolute;
+    top: 68px;
+    bottom: 68px;
+    background-color: darkslateblue;
+}
+
+footer {
+    height: 68px;
+    width: 100%;
+    background-color: darkslategray;
+    position: absolute;
+    bottom: 0px;
+}
+
+article {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.box {
+    background-color: darkmagenta;
+    width: 100px;
+    height: 100px;
+    color: aliceblue;
+    text-align: center;
+    margin: 10px;
+}
