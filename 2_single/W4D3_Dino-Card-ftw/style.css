@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    background: rgb(178,139,100);
+    border-radius: 10px;
+    border: grey;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 50% 25px auto 40px;
+}
+
+.image {
+    background-color: rgb(113, 175, 131);
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.species {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.diet {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.card > p {
+    grid-column: 1/4 ;
+    grid-row: 3/4;
+}
+
+.card > h2 {
+    margin: 0;
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.card-icons {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-icons > span {
+    flex-basis: 50%;
+    background-color: #bcbcef;
+    border: solid 3px grey;
+}
+
+.card-bookmark {
+    position: absolute;
+    z-index: 900;
+    top: -34px;
+    right: -10px;
+    font-size: 50px;
+}
