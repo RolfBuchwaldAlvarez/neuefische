@@ -54,4 +54,26 @@
   - Polymorphie und Vererbung
   - Collections in Java - ArrayList
   - Exceptions und Optional
+  
+- [25.05.2020, Montag](/2020-05-25-monday.md)
+   - REST Schnittstellen
+   - Postman
+   - Spring
+   
+   
+ - [27.05.2020, Wednesday](/2020-05-27-wednesday.md)
+      - Übersicht Controller, Service, DB
+      - Übungsaufgabe Spring-ProductOrderDB
+      - Review Lösungsweg
+  
+- [26.05.2020, Mittwoch](/2020-05-26-tuesday.md)
+  - HTTP Status codes
+  - Query parameter
+  - Dependency Injection
+  - Annotations
+  - Exceptions und Optional
+  - Rest Template
  
+
+  
+
