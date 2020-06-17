@@ -1,0 +1,11 @@
+.card-image {
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 50vh;
+}

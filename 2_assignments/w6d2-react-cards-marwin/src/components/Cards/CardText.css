@@ -1,0 +1,10 @@
+h2 {
+  margin: 50px auto;
+}
+
+.card-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-grow: 1;
+}
