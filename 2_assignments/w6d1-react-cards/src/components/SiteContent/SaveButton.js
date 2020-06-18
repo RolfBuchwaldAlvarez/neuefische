@@ -22,7 +22,7 @@ export default function IconLabelButtons() {
         startIcon={<SaveIcon />}
         >
         Wolves
-    </Button>
+      </Button>
     </div>
   );
 }
