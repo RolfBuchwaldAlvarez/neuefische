@@ -49,6 +49,22 @@
   - Wie schreibe ich einen Test? - Anleitung
   - If / Else if / Else Statement
   - Switch Statement
+ 
+- [18.05.2020, Montag](/2020-05-18-monday.md)
+  - For-Loop
+  - While-Loop
+  - Arrays / Classes
+  - Getter/Setter
+  - Construktor 
+  - packages
+  
+- [19.05.2020, Dienstag](/2020-05-19-tuesday.md)
+  - Objektorientierung
+  - Collections in Java - ArrayList, HashSet
+  - Paradigmen
+  - Interface
+  - Encapsulation
+  - Abstraction
   
 - [20.05.2020, Mittwoch](/2020-05-20-wednesday.md)
   - Polymorphie und Vererbung
@@ -73,7 +89,42 @@
   - Annotations
   - Exceptions und Optional
   - Rest Template
- 
-
   
+- [08.06.2020, Montag](/2020-06-08-monday.md)
+    - Friday Exercise
+    - Media Queries
+    - Transition
+    - Keyframes
+    - Intro JavaScript
+    - Übung: Calculator
+    - JavaScript Functions
+    - Übung: Calculator als Function
+    - JavaScript Objects
+ 
+- [10.06.2020, Mittwoch](/2020-06-10-wednesday.md)
+    - Array Filter-method
+    - Object.values
+    - Object references
+    - map-method
+    - input Element
+    - checkbox Element
+    - fetch
+    
+- [15.06.2020, Montag](/2020-06-15-monday.md)
+    - React Intro
+    - React Setup
+    - Pass properties
+    - Styling in React
+    - React state Intro
+
+- [16.06.2020, Dienstag](/2020-06-16-tuesday.md)
+    - Event Handling
+    - useState Hook
+    
+- [17.06.2020, Mittwoch](/2020-06-17-wednesday.md)
+    - Fetch und useEffect-Hook
+    - Key-Attribut
+    - Material-UI
+    
+ 
 
