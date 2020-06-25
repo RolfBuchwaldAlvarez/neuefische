@@ -3,6 +3,9 @@ import LandingHeader from "./1-landingPage/LandingHeader";
 import LandingContent from "./1-landingPage/LandingContent";
 import LandingFooter from "./1-landingPage/LandingFooter";
 import {makeStyles} from "@material-ui/core/styles";
+import GameHeader from "./2-gamePage/GameHeader";
+import GameFooter from "./2-gamePage/GameFooter";
+import offGridGameContent from "./2-gamePage/offGridGameContent";
 
 const useStyles = makeStyles((theme) => ({
   app: {
@@ -17,9 +20,12 @@ function App() {
 
   return (
     <div className={classes.app}>
-      <LandingHeader />
+      {/*<LandingHeader />
       <LandingContent />
-      <LandingFooter />
+      <LandingFooter />*/}
+      <GameHeader />
+      <offGridGameContent />
+      <GameFooter />
     </div>
   );
 }
