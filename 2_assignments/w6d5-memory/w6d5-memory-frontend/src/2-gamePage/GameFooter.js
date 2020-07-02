@@ -5,8 +5,8 @@ const useStyles = makeStyles((theme) => ({
   gameFooter: {
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "red",
-    opacity: ".50"
+    backgroundColor: "black",
+    color: "white",
   }
 }));
 
