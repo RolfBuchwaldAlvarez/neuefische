@@ -10,5 +10,9 @@ const useStyles = makeStyles((theme) => ({
 export default function CardBack({style}) {
   const classes = useStyles();
 
-  return <div style={style} className={classes.back}/>
+  return(
+    <>
+      <div style={style} className={classes.back}/>
+    </>
+  );
 }

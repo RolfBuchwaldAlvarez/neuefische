@@ -1,7 +1,8 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
+import NewCard from "./NewCard";
+import MemoryPlayCard from "./MemoryPlayCard";
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -12,19 +13,22 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "5%",
     PaddingBottom: "5%",*/
   },
-  paper: {
-    height: "90%",
+  cardContainer: {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr 1fr",
+    gridTemplateRows: "1fr 1fr 1fr 1fr",
+    columnGap: "5px",
+    rowGap: "5px",
+    padding: "10px",
+    height: "95%",
     width: "50%",
-    padding: "24vw",
+    borderRadius: "5px",
     textAlign: "center",
     color: "red",
-    backgroundColor: "white",
+    /*backgroundColor: "white",*/
     whiteSpace: "nowrap",
-    background: "black",
+    /*background: "black",*/
   },
-  item: {
-
-  }
 }));
 
 export default function GridMaterialUI() {
@@ -33,7 +37,24 @@ export default function GridMaterialUI() {
   return (
     <div className={classes.div}>
       <Grid container /*direction="row"*/ justify="center" alignItems="center" className={classes.grid}>
-          </div><Paper className={classes.paper} variant={"outlined"} elevation={3}>Paper Card</Paper>
+          <div className={classes.cardContainer}>
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+            <NewCard />
+          </div>
       </Grid>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./components/Card";
+import Card from "./components/MemoryPlayCard";
 import GridContainer from "./components/GridContainer";
 import Grid from "./components/Grid";
 import Picture from "../images/woodSmall.jpg";

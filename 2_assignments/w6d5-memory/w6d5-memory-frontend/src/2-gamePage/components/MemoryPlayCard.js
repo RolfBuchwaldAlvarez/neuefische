@@ -29,7 +29,7 @@ const useStyles = {
   }
 }
 
-export default function Card() {
+export default function MemoryPlayCard() {
   const [flipped, setFlipped] = useState(false);
 
   let cardStyle = {...useStyles.card}
@@ -39,8 +39,8 @@ export default function Card() {
 
   return (
       <Paper onClick={() => setFlipped(!flipped)} style={cardStyle}>
-        {/*<CardBack style={useStyles.style1}/>*/}
-        {/*<Image style={useStyles.style1}/>*/}
+        <CardBack style={useStyles.style1}/>
+        <Image style={useStyles.style1}/>
       </Paper>
   );
 }
